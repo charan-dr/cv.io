@@ -1,8 +1,13 @@
-streamlit
-opencv-python-headless
-mediapipe
-numpy
-Pillow
-torch
-opencv-python-headless==4.12.0.88
-torchvision
+# Core
+streamlit==1.36.0
+numpy==1.26.4
+pillow==10.3.0
+
+# OpenCV (headless for servers like Render—no GUI deps)
+opencv-python-headless==4.8.1.78
+
+# MediaPipe (works with Python 3.8–3.10)
+mediapipe==0.10.9
+
+# Pin protobuf to avoid version conflicts with mediapipe
+protobuf==3.20.3
